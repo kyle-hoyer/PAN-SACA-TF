@@ -3,7 +3,7 @@
 
 module "vnet" {
   source              = "./modules/vnet/"
-  name                = "${var.global_prefix}-${var.vnet_prefix}-vnet"
+  name                = "${var.vnet_prefix}-vnet"
   vnet_cidr           = var.vnet_cidr
   subnet_names        = var.vnet_subnet_names
   subnet_cidrs        = var.vnet_subnet_cidrs
@@ -13,7 +13,7 @@ module "vnet" {
 }
 
 resource "azurerm_route_table" "vnet" {
-  name                = "${var.global_prefix}-${var.vnet_prefix}-rtb"
+  name                = "${var.vnet_prefix}-udr"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 
