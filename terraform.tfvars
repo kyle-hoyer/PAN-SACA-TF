@@ -1,7 +1,7 @@
 fw_license   = "byol"                                                       # Uncomment 1 fw_license to select VM-Series licensing mode
 #fw_license   = "bundle1"
 #fw_license    = "bundle2"
-global_prefix = "hoyer"
+global_prefix = "saca"
 
 #location        = "eastus"     #Uncomment to deploy into Azure Commercial  
 location      = "usgovarizona"  #uncomment to deploy into Azure Government    
