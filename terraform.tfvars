@@ -13,14 +13,14 @@ fw_prefix               = "panos"                                         # Adds
 fw_vm_count             = 2
 fw_panos                = "10.0.1"
 fw_nsg_prefix           = "0.0.0.0/0"
-fw_internal_lb_ip       = "10.0.2.100"
+fw_internal_lb_ip       = "10.140.53.36"
 
 # -----------------------------------------------------------------------
 # Transit resource group variables
 vnet_prefix          = "saca"                                         # Adds prefix name to all resources created in the transit vnet's resource group
-vnet_cidr            = "10.140.55.0/22"
+vnet_cidr            = "10.140.52.0/22"
 vnet_subnet_names    = ["mgmt", "untrust", "trust", "vdms"]
-vnet_subnet_cidrs    = ["10.140.56.0/28", "10.140.56.16/28", "10.140.56.32/28", "10.140.55.0/24"]
+vnet_subnet_cidrs    = ["10.140.53.0/28", "10.140.53.16/28", "10.140.53.32/28", "10.140.52.0/24"]
 
 # -----------------------------------------------------------------------
 # VDMS resource group variables                                      # Adds prefix name to all resources created in spoke1's resource group
