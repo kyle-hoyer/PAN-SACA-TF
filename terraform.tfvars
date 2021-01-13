@@ -13,7 +13,7 @@ fw_prefix               = "panos"                                         # Adds
 fw_vm_count             = 2
 fw_panos                = "10.0.1"
 fw_nsg_prefix           = "0.0.0.0/0"
-fw_internal_lb_ip       = "10.140.53.36"
+fw_internal_lb_ip       = "10.140.53.38"                              #Utilize the next IP after the number of PANOS VMs you're deploying in the trusted subnet
 
 # -----------------------------------------------------------------------
 # Transit resource group variables
